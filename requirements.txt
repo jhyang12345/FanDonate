@@ -1,0 +1,7 @@
+for python3 install pymysql
+
+at __init__.py
+add
+
+import pymysql
+pymysql.install_as_MySQLdb()

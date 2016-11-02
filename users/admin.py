@@ -38,7 +38,7 @@ class UserChangeForm(forms.ModelForm):
     password = ReadOnlyPasswordHashField()
 
     class Meta:
-        model = MyUser
+        model = FanUser
         field = ('email', 'password', 'date_of_birth', 'is_active')
 
     def clean_password(self):
